@@ -75,9 +75,7 @@ double fd(double en, double beta, double mu)
 //  v = coupling coeffient
 //-------------------------------------------------------------------------------
 double lambda2(double x, double a, double b, double U, double v){
-
     double em;
-
     if( x-a-U > 2.0*fabs(b) ){
         //em = (2.0*v*v*sqrt( 1 - ( (x-a-U)*(x-a-U) ) / ( 4.0*b*b ) ) / b);
         em = v*v/(2.0*b*b)*((x-a-U)-sqrt((x-a-U)*(x-a-U)-4.0*b*b));
