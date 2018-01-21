@@ -1,0 +1,54 @@
+#======================INPUT.IN===================================
+
+0.0				# eta
+0.0				# chemical potential
+90.0				# inverse temperature
+0.1				# V_l = left coupling coefficient
+0.1				# V_r = right coupling coefficient
+
+#----------------------central region-----------------------------
+
+0.1				# a0 = onsite energy of the central site
+0.7				# U_h = Hubbard interaction parameter
+0.0				# V_g =  gate voltage
+
+#----------------------lead parameters----------------------------- 
+
+0				# 0 = a = mu, 1 = a value given next
+0.0 				# a = onsite energy of the lead sites
+0.5 				# b = hopping energy between the lead sites 
+0.2				# U_l = left bias voltage
+0.0 				# U_r = right bias voltage
+
+#----------------------approx and gamma------------------------------
+
+1		          	# 1 = solves the problem graphically, 2 = solves the problem numerically 3 = calculates the current, 4 = spectral function, 5 = derivatives
+H             			# used many-body approximation H = Hartree-Fock, B = 2B, G = GW, T = T-matrix
+1				# 0 = use fitted value for the gamma, 1 = gamma = 2V^2/b
+0.17				# gamma = damping of the Green function
+
+#----------------------sweep options----------------------------------
+
+0             			# 0 = no sweep, 1 = sweep
+0.0 4.0				# ul_min -> ur_max
+0.0 -4.0			# ur_min -> ur_max
+0.05				# ustep
+
+#---------------------solutions for the denisty--------------------------
+
+1 	           		# number of solutions
+0.265017  			# solutions for the density
+
+#-------------------------------------------------------------------------
+
+0.364473					# solutions for the density
+
+0.084486 0.613970 0.913541  			# solutions for the density
+
+0.332514 0.582180  0.661073 			# solutions for the density case 1
+0.110516 0.707312 0.870821			# solutions for the density case 2
+0.085778 0.270889 0.50 0.729111	0.914222	# solutions for the density case 3
+
+0.174154 0.554499 0.869494			# case 1 with coupling 0.1
+
+
