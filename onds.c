@@ -88,9 +88,7 @@ double lambda2(double x, double a, double b, double U, double v){
         em = v*v*(x-a-U)/(2.0*b*b);
     }
     else em = 0.0;
-
     return em;
-
 }
 //-------------------------------------------------------------------------------
 //  Imaginary part of the embedding self-energy
@@ -106,7 +104,6 @@ double gamma2(double x, double a, double b, double U, double v){
         em = v*v/(4.0*b*b)*(sqrt((x-a-U)*(x-a-U)-4.0*b*b));
     }
     else em = 0.0;
-
     return em;
 }
 //===============================================================================
