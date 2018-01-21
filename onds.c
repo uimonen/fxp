@@ -120,17 +120,13 @@ double gamma2(double x, double a, double b, double U, double v){
 //-------------------------------------------------------------------------------
 double gammafunc(double x, double a, double b, double U, double v)
 {
-    if( fabs(x-a-U)<=2.0*b )
-    {
+    if( fabs(x-a-U)<=2.0*b ){
         return(2.0*v*v*sqrt( 1 - ( (x-a-U)*(x-a-U) ) / ( 4.0*b*b ) ) / b);
     }
-    else
-    {
-
+    else{
         return 0.0;
     }
 }
-
 //-------------------------------------------------------------------------------
 //  Calculates the integrand in the principal value integral
 //  evalated to obtain the real part of the embedding self-energy
@@ -153,7 +149,6 @@ double lambdaEM(struct params *pms, double x){
     epsrel = 0.00000001;       // relative error limit of the result
     abserr = 0.0;              // absolute error of the result
     limit  = 2000;             // maximum number of subintervals in integration routine (must be < size of workspace)
-
 
     // calculate LambdaL
     llimit = a - 2.0*b + ul ;
